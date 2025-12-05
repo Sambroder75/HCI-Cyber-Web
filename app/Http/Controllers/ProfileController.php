@@ -27,6 +27,7 @@ class ProfileController extends Controller
 
         $request->validate([
             'name' => 'required|string|max:255',
+            'bio' => 'nullable|string|max:500',
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048', 
         ]);
 
@@ -39,6 +40,7 @@ class ProfileController extends Controller
         }
 
         $user->name = $request->name;
+        $user->bio = $request->bio;
         $user->save();
 
         return redirect()->route('profile')->with('success', 'Profile updated successfully!');

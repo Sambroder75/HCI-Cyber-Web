@@ -8,6 +8,8 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CommentController; 
 use App\Models\Comment; 
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\OpinionController; 
+use App\Http\Controllers\OpinionVoteController;
 
 Route::get('/', function () {
     return view('home');
@@ -68,5 +70,17 @@ Route::get('/cybersecurity', function () {
 Route::get('/opinion', function () {
     return view('opinion');
 })->name('opinion');
+
+Route::get('/opinion', [OpinionController::class, 'index'])
+    ->name('opinion');
+
+Route::get('/opinion/create', [OpinionController::class, 'create'])
+    ->name('createopinion');
+
+Route::post('/opinion', [OpinionController::class, 'store'])
+    ->name('opinion.store');
+
+Route::post('/opinion/{opinion}/vote/{type}', [OpinionVoteController::class, 'vote'])
+    ->name('opinion.vote');
 
 Route::get('/search', [SearchController::class, 'index'])->name('search');
