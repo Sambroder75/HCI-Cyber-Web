@@ -38,44 +38,53 @@
                 @method('PATCH')
 
                 <div class="mb-6 text-center">
-                    <label class="cursor-pointer block">
+                    <label class="cursor-pointer block relative">
                         <div class="w-24 h-24 mx-auto bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-dashed border-cyber-purple hover:bg-gray-700 transition relative group">
-                            @if($user->avatar)
-                                <img id="avatar-preview" src="{{ asset('storage/' . $user->avatar) }}" class="w-full h-full object-cover">
-                            @else
-                                <img id="avatar-preview" class="w-full h-full object-cover hidden" src="#">
-                                <i id="avatar-icon" class="fas fa-camera text-2xl text-gray-400"></i>
-                            @endif
+                            
+                            <img id="avatar-preview" 
+                                 src="{{ $user->avatar ? asset('storage/' . $user->avatar) : '#' }}" 
+                                 class="w-full h-full object-cover {{ $user->avatar ? '' : 'hidden' }}">
+                            
+                            <i id="avatar-icon" class="fas fa-camera text-2xl text-gray-400 {{ $user->avatar ? 'hidden' : '' }}"></i>
+                            
                             <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
-                                <span class="text-xs">Change</span>
+                                <span class="text-xs">Ubah</span>
                             </div>
                         </div>
-                        <input type="file" name="avatar" id="avatar-input" class="hidden">
+                        
+                        <input type="file" name="avatar" id="avatar-input" class="hidden" accept="image/*">
                     </label>
                     @error('avatar') <span class="text-red-400 text-xs">{{ $message }}</span> @enderror
                 </div>
 
                 <div class="mb-4">
-                    <label class="block text-sm text-gray-400 mb-1">Full Name</label>
-                    <input type="text" name="name" value="{{ old('name', $user->name) }}" class="w-full input-field border rounded-lg p-3 focus:outline-none focus:border-cyber-purple">
+                    <label class="block text-sm text-gray-400 mb-1">Nama Lengkap</label>
+                    <input type="text" name="name" value="{{ old('name', $user->name) }}" class="w-full input-field border rounded-lg p-3">
                     @error('name') <span class="text-red-400 text-xs">{{ $message }}</span> @enderror
                 </div>
 
+                <div class="mb-4">
+                    <label class="block text-sm text-gray-400 mb-1">Bio (Maks. 500 Karakter)</label>
+                    <textarea name="bio" rows="4" class="w-full input-field border rounded-lg p-3 resize-none">{{ old('bio', $user->bio) }}</textarea>
+                    @error('bio') <span class="text-red-400 text-xs">{{ $message }}</span> @enderror
+                </div>
+
                 <div class="mb-6">
-                    <label class="block text-sm text-gray-500 mb-1">Email Address <span class="text-xs italic">(Cannot be changed)</span></label>
+                    <label class="block text-sm text-gray-500 mb-1">Alamat Email <span class="text-xs italic">(Tidak dapat diubah)</span></label>
                     <input type="email" 
                            value="{{ $user->email }}" 
-                           class="w-full input-field input-disabled border rounded-lg p-3 focus:outline-none" 
+                           class="w-full input-field input-disabled border rounded-lg p-3" 
                            readonly>
                 </div>
 
                 <div class="flex gap-4">
-                    <a href="{{ route('profile') }}" class="w-1/2 py-3 rounded-lg border border-gray-600 text-center hover:bg-gray-800 transition">Cancel</a>
-                    <button type="submit" class="w-1/2 py-3 rounded-lg bg-cyber-purple text-white hover:bg-purple-600 transition">Save Changes</button>
+                    <a href="{{ route('profile') }}" class="w-1/2 py-3 rounded-lg border border-gray-600 text-center hover:bg-gray-800 transition">Batal</a>
+                    <button type="submit" class="w-1/2 py-3 rounded-lg bg-cyber-purple text-white hover:bg-purple-600 transition">Simpan Perubahan</button>
                 </div>
             </form>
         </div>
     </div>
+
 
     <script src="{{ asset('js/profile.js') }}"></script>
 
