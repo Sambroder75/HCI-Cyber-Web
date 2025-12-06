@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -12,6 +13,15 @@ use App\Http\Controllers\OpinionController;
 use App\Http\Controllers\OpinionVoteController;
 
 Route::get('/', function () {
+    
+    if (Auth::check()) {
+        return redirect()->route('home'); 
+    }
+    return view('landing'); 
+})->name('landing');
+
+
+Route::get('/home', function () {
     return view('home');
 })->name('home');
 
