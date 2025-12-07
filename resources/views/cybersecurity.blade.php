@@ -48,34 +48,37 @@
     <main class="flex-grow max-w-7xl mx-auto px-8 py-12 w-full">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
             <div class="flex flex-col items-start">
-                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Virus</span> <span class="text-white">Sigma</span></h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Reentrancy</span> <span class="text-white">Attack</span></h2>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn Reentrancy attack here</p>
+                <a href="{{ route('cybersecurity.reentry') }}" class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</a>
             </div>
             <div class="flex flex-col items-start">
                 <h2 class="text-4xl font-medium text-[#d946ef] mb-4">IDOR</h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn about IDOR in here</p>
+                <a href="{{ route('cybersecurity.idor') }}" class="inline-block px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">
+                     Read More....
+                </a>
             </div>
             <div class="flex flex-col items-start">
-                <h2 class="text-4xl font-medium text-[#d946ef] mb-4">BINEX</h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Binary</span> <span class="text-white">Exploitation</span></h2>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn Binary exploitation in here</p>
+                <a href="{{ route('cybersecurity.binex') }}" class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</a>
             </div>
             <div class="flex flex-col items-start">
-                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">SQL</span> <span class="text-white">INJECT</span></h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">SQL</span> <span class="text-white">Injection</span></h2>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn SQL Injection in here</p>
+                <a href="{{ route('cybersecurity.sql') }}" class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</a>
             </div>
             <div class="flex flex-col items-start">
                 <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Cross-site</span> <br><span class="text-white">Scripting</span></h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn XSS in here</p>
+                <a href="{{ route('cybersecurity.xss') }}" class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</a>
             </div>
             <div class="flex flex-col items-start">
-                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Broken</span> <br><span class="text-white">Access</span></h2>
-                <p class="text-gray-400 font-light text-lg mb-8">lorem ipsumawdwa</p>
-                <button class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</button>
+                <h2 class="text-4xl font-medium mb-4"><span class="text-[#d946ef]">Broken</span> <br><span class="text-white">Access Control</span></h2>
+                <p class="text-gray-400 font-light text-lg mb-8">Learn Broken access control here</p>
+                <a href="{{ route('cybersecurity.brokenaccess') }}" class="px-8 py-2 rounded-full border border-pink-500/50 text-gray-300 text-sm hover:bg-pink-500 hover:text-white transition-all">Read More....</a>
+            </div>
             </div>
         </div>
     </main>
