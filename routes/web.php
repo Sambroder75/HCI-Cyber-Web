@@ -77,6 +77,30 @@ Route::get('/cybersecurity', function () {
     return view('cybersecurity');
 })->name('cybersecurity');
 
+Route::get('/cybersecurity/idor', function () {
+    return view('idor'); 
+})->name('cybersecurity.idor');
+
+Route::get('/cybersecurity/binex', function () {
+    return view('binex'); 
+})->name('cybersecurity.binex');
+
+Route::get('/cybersecurity/sql', function () {
+    return view('sql'); 
+})->name('cybersecurity.sql');
+
+Route::get('/cybersecurity/xss', function () {
+    return view('xss'); 
+})->name('cybersecurity.xss');
+
+Route::get('/cybersecurity/brokenaccess', function () {
+    return view('brokenaccess'); 
+})->name('cybersecurity.brokenaccess');
+
+Route::get('/cybersecurity/reentry', function () {
+    return view('reentry'); 
+})->name('cybersecurity.reentry');
+
 Route::get('/opinion', function () {
     return view('opinion');
 })->name('opinion');
