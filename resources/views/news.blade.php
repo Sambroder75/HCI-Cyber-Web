@@ -218,7 +218,7 @@
                             <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=300" class="w-full h-full object-cover group-hover:scale-110 transition-transform">
                         </div>
                         <div>
-                            <h4 class="font-bold text-sm text-gray-200 group-hover:text-cyber-purple transition line-clamp-2">Virus Sigma Analysis: Deep Dive</h4>
+                            <h4 class="font-bold text-sm text-gray-200 group-hover:text-cyber-purple transition line-clamp-2">File Virus Analysis: Deep Dive</h4>
                             <span class="text-xs text-gray-500 mt-1 block"><i class="far fa-eye mr-1"></i> 2.4k views</span>
                         </div>
                     </a>

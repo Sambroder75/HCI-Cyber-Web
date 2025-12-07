@@ -81,10 +81,10 @@
             <div class="absolute inset-0 bg-gradient-to-t from-cyber-black via-transparent to-transparent opacity-90"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-cyber-black/80 via-transparent to-transparent"></div>
             <div class="absolute bottom-16 left-8 md:left-16 z-10 max-w-2xl">
-                <h1 class="text-6xl md:text-8xl font-bold tracking-tight mb-2">
-                    <span class="text-cyber-purple">lorem</span> <span class="text-white">ipsum</span>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-2">
+                    <span class="text-cyber-purple">Identity Security:</span> <span class="text-white">Your First and Last Line of Defense</span>
                 </h1>
-                <p class="text-gray-400 text-xl md:text-2xl font-light mb-8">lorem ipsumawdwa</p>
+                <p class="text-gray-400 text-xl md:text-2xl font-light mb-8">Fully detailed explanation regarding defense system</p>
                 <a href="{{ route('news.show') }}" class="inline-block px-8 py-3 rounded-full border border-cyber-purple text-gray-300 hover:bg-cyber-purple hover:text-white transition-all duration-300 shadow-[0_0_10px_rgba(168,85,247,0.2)]">Read More</a>
             </div>
         </section>
@@ -99,8 +99,8 @@
                             <div class="absolute inset-0 bg-purple-900/20"></div>
                         </div>
                         <div class="p-6 bg-[#0a0a0a]">
-                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">Virus Sigma</h3>
-                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Sigma</span></p>
+                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">AI-Powered Phishing Surge</h3>
+                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Social Engineering</span></p>
                         </div>
                     </article>
                 </a>
@@ -111,8 +111,8 @@
                             <div class="absolute inset-0 bg-purple-900/20"></div>
                         </div>
                         <div class="p-6 bg-[#0a0a0a]">
-                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">Virus Sigma pt2</h3>
-                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Sigma</span></p>
+                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">Project Midnight: Zero-Day</h3>
+                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Vulnerability</span></p>
                         </div>
                     </article>
                 </a>
@@ -123,8 +123,8 @@
                             <div class="absolute inset-0 bg-purple-900/20"></div>
                         </div>
                         <div class="p-6 bg-[#0a0a0a]">
-                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">Virus Sigma pt3</h3>
-                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Sigma</span></p>
+                            <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-cyber-purple transition-colors">DeFi Smart Contract Hack</h3>
+                            <p class="text-sm text-gray-400">2hr ago &bull; <span class="text-gray-300">Crypto Security</span></p>
                         </div>
                     </article>
                 </a>
@@ -139,13 +139,13 @@
                     <a href="{{ route('news.show') }}" class="w-full md:w-[500px] h-[280px] rounded-2xl overflow-hidden border border-cyber-purple shadow-neon relative shrink-0 block">
                         <img src="https://images.unsplash.com/photo-1614064641938-3e852943702d?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
-                             <h3 class="text-xl font-bold text-white">Virus Sigma pt3</h3>
-                             <p class="text-xs text-gray-400 mt-1">2hr ago &bull; Sigma</p>
+                             <h3 class="text-xl font-bold text-white">IoT Botnet Expansion</h3>
+                             <p class="text-xs text-gray-400 mt-1">2hr ago &bull; Network Security</p>
                         </div>
                     </a>
                     <div class="flex-1">
-                        <a href="{{ route('news.show') }}"><h3 class="text-4xl font-bold mb-4 text-white group-hover:text-cyber-purple transition-colors">Virus Sigma pt3</h3></a>
-                        <p class="text-xl text-gray-400 font-light">Lorem loreman ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="{{ route('news.show') }}"><h3 class="text-4xl font-bold mb-4 text-white group-hover:text-cyber-purple transition-colors">IoT Botnet Expansion</h3></a>
+                        <p class="text-xl text-gray-400 font-light">Millions of smart toothbrushes and fridges recruited into a massive DDoS botnet targeting ISPs.</p>
                         <div class="mt-6 flex gap-4">
                             <span class="px-3 py-1 rounded-full border border-gray-700 text-xs text-gray-400">#malware</span>
                             <span class="px-3 py-1 rounded-full border border-gray-700 text-xs text-gray-400">#security</span>

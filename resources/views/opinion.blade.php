@@ -51,10 +51,10 @@
         </a>
 
         <div class="hidden md:flex items-center gap-12 text-sm font-light tracking-wide text-gray-300">
-            <a href="#" class="hover:text-cyber-purple transition-colors uppercase">Newest</a>
-            <a href="#" class="hover:text-cyber-purple transition-colors uppercase">Analysis</a>
-            <a href="#" class="hover:text-cyber-purple transition-colors uppercase">Cybersecurity</a>
-            <a href="{{ route('opinion') }}" class="text-cyber-purple font-medium uppercase">Opinion</a>
+            <a href="{{ route('news') }}" class="hover:text-cyber-purple transition-colors uppercase">Newest</a>
+            <a href="{{ route('analysis') }}" class="hover:text-cyber-purple transition-colors uppercase">Analysis</a>
+            <a href="{{ route('cybersecurity') }}" class="hover:text-cyber-purple transition-colors uppercase">Cybersecurity</a>
+            <a href="{{ route('opinion') }}" class="text-cyber-purple font-bold uppercase">Opinion</a>
         </div>
 
         <div class="flex items-center gap-6 text-gray-300 text-lg">
