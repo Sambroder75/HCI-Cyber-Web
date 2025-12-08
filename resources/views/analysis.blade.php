@@ -54,7 +54,9 @@
                 <h2 class="text-3xl font-bold mb-4">Ransomware Trends Q4 2025</h2>
                 <p class="text-gray-400 mb-6 leading-relaxed">An in-depth look at the shifting tactics of RaaS.</p>
                 <div class="flex items-center gap-4">
-                    <button class="bg-cyber-purple text-black px-6 py-2 rounded-full font-bold hover:bg-white transition-colors">Read Full Report</button>
+                    <a href="{{ route('report.show') }}" class="inline-block bg-cyber-purple text-black px-6 py-2 rounded-full font-bold hover:bg-white transition-colors">
+                        Read Full Report
+                    </a>
                 </div>
             </div>
             <div class="order-1 md:order-2 h-64 md:h-auto rounded-2xl overflow-hidden relative">
@@ -71,7 +73,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-2">Supply Chain Attacks</h3>
                 <p class="text-sm text-gray-400 mb-4">Analyzing the ripple effect of the recent NPM package vulnerabilities.</p>
-                <a href="#" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
+                <a href="{{ route('report.show') }}" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
             </div>
             <div class="bg-[#0a0a0a] rounded-2xl p-6 border-t-4 border-cyber-purple hover:bg-[#111] transition">
                  <div class="flex justify-between items-start mb-4">
@@ -80,7 +82,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-2">Zero-Day Statistics</h3>
                 <p class="text-sm text-gray-400 mb-4">Comparing frequency of browser-based zero-days vs kernel exploits.</p>
-                <a href="#" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
+                <a href="{{ route('report.show') }}" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
             </div>
              <div class="bg-[#0a0a0a] rounded-2xl p-6 border-t-4 border-cyber-purple hover:bg-[#111] transition">
                  <div class="flex justify-between items-start mb-4">
@@ -89,7 +91,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-2">Botnet Traffic</h3>
                 <p class="text-sm text-gray-400 mb-4">Global traffic analysis of the revived Mirai botnet variant.</p>
-                <a href="#" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
+                <a href="{{ route('report.show') }}" class="text-cyber-purple text-sm font-bold hover:underline">View Data &rarr;</a>
             </div>
         </div>
     </main>

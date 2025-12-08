@@ -72,6 +72,17 @@
                     @enderror
                 </div>
 
+                <div class="mb-6">
+                    <label for="category" class="block text-sm font-medium text-gray-300 mb-2">Kategori</label>
+                        <select name="category" id="category" class="w-full input-field bg-[#1a1a1a] text-white border border-gray-600 rounded-xl p-3 focus:outline-none focus:border-cyber-purple transition">
+                            <option value="General">General</option>
+                            <option value="Cybersecurity">Cybersecurity</option>
+                            <option value="Network">Network</option>
+                            <option value="Hardware">Hardware</option>
+                            <option value="Programming">Programming</option>
+                        </select>
+                </div>
+
                 <div class="flex justify-end gap-4">
                     <a href="{{ route('opinion') }}" class="px-6 py-3 rounded-xl border border-gray-600 text-gray-400 hover:bg-gray-800 transition">Batal</a>
                     <button type="submit" class="px-6 py-3 rounded-xl bg-cyber-purple text-white font-semibold shadow-neon hover:bg-purple-600 transition-colors">

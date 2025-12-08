@@ -118,3 +118,7 @@ Route::post('/opinion/{opinion}/vote/{type}', [OpinionVoteController::class, 'vo
     ->name('opinion.vote');
 
 Route::get('/search', [SearchController::class, 'index'])->name('search');
+
+Route::get('/analysis/report/ransomware-trends', function () {
+    return view('report');
+})->name('report.show');

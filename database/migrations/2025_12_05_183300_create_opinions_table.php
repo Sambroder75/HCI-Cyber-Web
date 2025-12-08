@@ -15,7 +15,9 @@ return new class extends Migration
             
             // Kolom yang menyebabkan masalah sebelumnya
             $table->string('title', 150); 
-            $table->string('text', 1000); 
+            $table->string('text', 1000);
+
+            $table->string('category')->default('General');
             
             // Kolom voting
             $table->integer('upvotes')->default(0); 

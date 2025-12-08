@@ -137,7 +137,7 @@
                 <div class="hidden md:block w-1 h-64 bg-purple-800 rounded-full bg-gradient-to-b from-cyber-purple to-transparent"></div>
                 <div class="flex-1 flex flex-col md:flex-row items-center gap-8 group">
                     <a href="{{ route('news.show') }}" class="w-full md:w-[500px] h-[280px] rounded-2xl overflow-hidden border border-cyber-purple shadow-neon relative shrink-0 block">
-                        <img src="https://images.unsplash.com/photo-1614064641938-3e852943702d?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                        <img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent">
                              <h3 class="text-xl font-bold text-white">IoT Botnet Expansion</h3>
                              <p class="text-xs text-gray-400 mt-1">2hr ago &bull; Network Security</p>
